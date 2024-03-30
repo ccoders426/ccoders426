@@ -1,0 +1,280 @@
+02:23:43	Gonzalo Nuñez:	pregunta pero el lunes es feriado
+02:23:52	Guido Pisarra:	a preentrega directo...
+02:24:07	Romina Castillo:	El lunes entonces no tenemos clase?
+02:24:52	Cristian Caro Sierra:	buenas noches
+02:25:54	[TUTOR]Juan Manuel Romano:	Buenas tardes Coders!
+02:26:13	Valentin Zabala:	maxi, consulta, hay alguna area laboral de programacion que no se use html? seria en ciencia de datos?
+02:26:13	Otto Renzer:	hola, buenas noches
+02:27:25	Carlos Martinis:	inteligencia artificial HTML neto no? xD
+02:30:32	Cristian Caro Sierra:	Profe una pregunta, si uno quiere una carpeta con varias aplicaciones a mi por lo menos me arrojo un error en la DB
+02:31:02	Cristian Caro Sierra:	cuando hice el migrate
+02:31:03	Javier Andres Chavez:	Profe que puede ser que visual no me esta reconociendo los cambios?
+02:31:52	Cristian Caro Sierra:	mmmm vale voy a probar , gracias
+02:32:14	Romina Castillo:	a mi también me pasó pero se solucionó solo ajajjaaj
+02:33:15	Cristian Caro Sierra:	Replying to "a mi también me pasó..."
+
+Lo que me paso a mi o lo que le paso a Javier?? jejejejej
+02:33:37	Romina Castillo:	Replying to "a mi también me pasó..."
+
+lo de que no reconoce los cambios xD no sé quién lo dijo
+02:34:09	Andres Serra:	Replying to "a mi también me pasó..."
+
+que hizo?
+02:34:34	Gonzalo Nuñez:	76
+02:34:45	[Profesor] Maximiliano Torreblanca:	<h1 class="text-center" style="color:white">App de CoderHouse</h1>
+02:35:17	[Tutor] Miguel Rodenas:	Replying to "a mi también me pasó..."
+
+Si hacen cambios en el HTML o la parte visual del proyecto y al intentar ver los cambios siguen viéndolo igual, intenten recargar con ctrl+shift+r para que ignore la versión en el caché del navegador
+02:35:26	Joaquin Miranda:	en el index ?
+02:35:55	Yanina Rodríguez:	Podrías volver a mostrar como queda padre con lo que borramos?
+02:36:15	Pablo Melano:	pasas el código profe?
+02:36:24	Ignacio Vazquez Turri:	Replying to "pasas el código prof..."
+
+<h1 class="text-center" style="color:white">App de CoderHouse</h1>
+02:36:34	Pablo Melano:	Replying to "pasas el código prof..."
+
+gracias
+02:36:43	Ignacio Vazquez Turri:	Reacted to "gracias" with 🤝
+02:36:51	[Profesor] Maximiliano Torreblanca:	<h1 class="text-center" style="color:white">App de CoderHouse</h1>
+02:41:21	Diego Herrera Gre:	El mejor profe de JavaScript React JS que tuve jejejej
+02:41:42	[Tutor] Miguel Rodenas:	Reacted to "El mejor profe de Ja..." with 👏
+02:41:44	Ignacio Vazquez Turri:	Reacted to "El mejor profe de Ja..." with 👏
+02:41:52	Diego Herrera Gre:	Claro, y Python tiene algún import que permita escuchar eventos tipo addEventListener()?
+02:43:28	Joaquin Miranda:	eso desde el lado cliente no?
+02:44:06	Joaquin Miranda:	profe, y cuando por ejemplo nosotros queremos modificar la base de datos? o sea manipular los datos
+02:44:57	Joaquin Miranda:	o eso lo vamos a ver mas adelante
+02:45:23	Sebastián Andrade:	Reacted to "El mejor profe de Ja..." with 👏
+02:46:01	Romina Castillo:	Te torturan con los ABM en Diseño de Sistemas de la utn
+02:46:03	Romina Castillo:	jajajajjaajaj
+02:53:22	Joaquin Miranda:	ahh una muestra un producto en Marketplace por ejemplo y la otra te permite subir un producto para vender digamos
+02:54:28	Yanina Rodríguez:	No hay que indicar que sea post?
+02:54:38	Yanina Rodríguez:	Person que sea. == get
+02:54:44	Yanina Rodríguez:	O == delete
+02:55:17	Yanina Rodríguez:	ok
+02:58:13	Jeremias emmanuel Romero Jakiemon:	profe disculpe, token que función cumple ?
+02:58:47	Mariano Cuppari:	seria para encriptar los datos ?
+02:58:49	Jeremias emmanuel Romero Jakiemon:	buenísimo gracias profe
+02:59:02	Diego Herrera Gre:	Profe aquí también usaremos el .env para proteger los tokens?
+03:00:13	Valentin Zabala:	creo q era alta_curso
+03:00:31	Mariano Cuppari:	el path es alta curso
+03:01:13	María Guadalupe Rodriguez Frosi:	<br> para pasar mas abajo sino camada sin tanto lio jeje
+03:02:00	Yanina Rodríguez:	Podrías pasar el link por acá pls?
+03:02:09	[Profesor] Maximiliano Torreblanca:	https://getbootstrap.com/docs/5.3/forms/overview/#overview
+03:03:19	Valentin Zabala:	podes pasar el code del template
+03:04:11	Ignacio Vazquez Turri:	sisi
+03:04:11	[Profesor] Maximiliano Torreblanca:	{% extends "padre.html" %}{% load static %}{% block contenido %}    <form action="">        {% csrf_token %}        <p>Nombre:</p>        <input type="text" name="nombre" required>        <p>Camada</p>        <input type="number" name="camada" required>                <button>Enviar</button>    </form>    {% endblock %}
+03:04:17	Ignacio Vazquez Turri:	o es una cosa o la otra basicamente
+03:04:24	Ricardo Agustin Gonzalez:	F
+03:04:27	[Tutor] Miguel Rodenas:	F
+03:04:27	Ignacio Vazquez Turri:	F
+03:04:29	Romina Castillo:	F
+03:04:29	Tomas Karagounis:	F
+03:04:30	Pablo Melano:	JAJA F
+03:04:31	Nazareno Zuñiga:	F
+03:04:31	Otto Renzer:	naaaaaaa para
+03:04:41	Otto Renzer:	APROBANOS ANTES JAJJAA
+03:04:42	Gonzalo Nuñez:	def dengue
+03:04:44	Roberto Sebastián Triano:	ahí vamos  💪
+03:04:49	María Guadalupe Rodriguez Frosi:	Reacted to "APROBANOS ANTES JAJJ..." with 😂
+03:04:52	[Tutor] Miguel Rodenas:	Reacted to "APROBANOS ANTES JAJJ..." with 😂
+03:04:55	Pablo Melano:	Reacted to "APROBANOS ANTES JAJJ..." with 😂
+03:07:37	Roberto Sebastián Triano:	profe, quien genera el objeto request?
+03:08:25	Roberto Sebastián Triano:	oka
+03:08:26	[Profesor] Maximiliano Torreblanca:	def curso_formulario(request):    if request.method == "POST":        curso = Curso( nombre=request.POST["nombre"] , camada=request.POST["camada"])        curso.save()        return render(request , "formulario.html")    return render(request , "formulario.html")
+03:11:28	Ignacio Vazquez Turri:	Saliooooooooo
+03:11:42	[TUTOR]Juan Manuel Romano:	Reacted to "Saliooooooooo" with 👏
+03:11:48	[Tutor] Miguel Rodenas:	Reacted to "Saliooooooooo" with 👏
+03:12:00	Javier Andres Chavez:	En models no se toca nada?
+03:13:00	Sebastián Andrade:	no me apaereció...
+03:13:01	Pablo Melano:	sisi salio
+03:13:02	Sebastián Andrade:	[25/Mar/2024 21:25:41] "GET /AppCoder/alta_curso?csrfmiddlewaretoken=0pmoptmffDWRLRmQuSuY3Si0GJSf4O5ZD8tcIBjjpBIDhuMoYa3oBIz4ARDAuHdb&nombre=testeando&camada=777 HTTP/1.1" 200 7851Not Found: /AppCoder/js/scripts.js[25/Mar/2024 21:25:42] "GET /AppCoder/js/scripts.js HTTP/1.1" 404 3569
+03:13:04	Maximiliano Tiani:	Nop
+03:13:06	Sebastián Andrade:	el servidor me dice eso
+03:13:11	Javier Andres Chavez:	En views cual seria el from
+03:13:20	Javier Andres Chavez:	para llamar a method
+03:13:28	Sebastián Andrade:	dale. me fijo
+03:13:30	Roberto Sebastián Triano:	profe hay alguna diferencia si ponemos post en vez de POST?
+03:14:04	Javier Andres Chavez:	no me reconoce el method
+03:14:12	Roberto Sebastián Triano:	ya se que es case sensitive, pero en el formulario de HTML en el method
+03:14:16	Francisco Borgno:	todo ok
+03:14:35	[Tutor] Miguel Rodenas:	Replying to "profe hay alguna dif..."
+
+No, si tenemos en minúscula o mayúscula en el method del template no hay diferencia, pero lo usual es usarlos en mayúscula
+03:14:48	[Profesor] Maximiliano Torreblanca:	{% extends "padre.html" %}{% load static %}{% block contenido %}    <form action="alta_curso" method="POST">        {% csrf_token %}        <p>Nombre:</p>        <input type="text" name="nombre" required>        <p>Camada</p>        <input type="number" name="camada" required>                <button>Enviar</button>    </form>    {% endblock %}
+03:14:59	Nazareno Zuñiga:	profe podes mostrar un toque cursos.html? tengo un error y no me lo toma meparece
+03:15:43	Javier Andres Chavez:	puedes mostrar el from de views
+03:15:48	Sebastián Andrade:	no... después repaso,je
+03:15:56	[Profesor] Maximiliano Torreblanca:	def curso_formulario(request):    if request.method == "POST":        curso = Curso( nombre=request.POST["nombre"] , camada=request.POST["camada"])        curso.save()        return render(request , "formulario.html")    return render(request , "formulario.html")
+03:16:09	Javier Andres Chavez:	la parte de arriba
+03:16:19	Leandro Kühnel:	listo salio
+03:16:21	Roberto Sebastián Triano:	Replying to "profe hay alguna dif..."
+
+👍
+03:16:24	Yanina Rodríguez:	Veo esto “The current path, AppCoder/alta_curso/alta_curso, didn’t match any of these.
+”
+03:16:43	[Profesor] Maximiliano Torreblanca:	https://codefile.io/f/6UwaM4TGF0
+03:17:00	Ignacio Vazquez Turri:	Replying to "Veo esto “The curren..."
+
+pero no tiene que ser alta_curso/alta_curso
+03:17:11	[Profesor] Maximiliano Torreblanca:	https://codefile.io/f/OEWSWnmXjM
+03:17:15	Romina Castillo:	Profe me pasa el código de cursos.html? porque no sé por qué no lo tengo
+03:17:51	[Profesor] Maximiliano Torreblanca:	https://codefile.io/f/LtPfdlOdLg
+03:17:57	Romina Castillo:	gracias!
+03:18:00	Yanina Rodríguez:	Podemos ver como quedan los path
+03:18:01	Yanina Rodríguez:	?
+03:18:02	Yanina Rodríguez:	En url?
+03:18:54	Sebastián Andrade:	ahora sí!
+03:19:47	Josefina Migueles:	Aaaah gracias!
+03:19:49	Javier Andres Chavez:	me pudes mostrar el url
+03:19:56	Otto Renzer:	Y LA LINEA 10 TAMBIEN TENIA MAL ESCRITO
+03:20:33	Otto Renzer:	ESTA MAL ESCRITO REQUIRED
+03:20:46	Lucia Fernandez:	Chicos paso los ausentes, cualquier cosita me dicen:
+Joaquin,Lezcano
+Jorge,Aedo
+Luis,Olmos
+Manuel,Castillo
+03:20:49	Otto Renzer:	JAJAJA ME VAN ODIAR
+03:20:55	[Profesor] Maximiliano Torreblanca:	https://codefile.io/f/OEWSWnmXjM
+03:21:15	Josefina Migueles:	Jajajaja ya pude, todo mal escribí gracias
+03:21:20	Gonzalo Nuñez:	si
+03:21:26	Ignacio Vazquez Turri:	todo ok
+03:21:26	Tomas Karagounis:	si para el puchito
+03:21:27	Javier Castellanos:	Si, cafesito!
+03:21:38	Ignacio Vazquez Turri:	viendo la manera de agregar msj cuando el curso ya este creado
+03:22:30	Dimas Reyes:	tengo problemas para que me corra bien e
+03:22:42	Yanina Rodríguez:	Alguno pudo resolver este error “”The current path, AppCoder/alta_curso/alta_curso, didn’t match any of these.” No encuentro donde tengo que corregir
+03:23:00	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+Proba con AppCoder/alta_curso/ o AppCoder/alta_curso en el navegador
+03:23:15	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+http://127.0.0.1:8000/AppCoder/alta_curso/
+03:23:17	Yanina Rodríguez:	Replying to "Alguno pudo resolver..."
+
+El tema es que manda así cuando hago el post
+03:23:31	Yanina Rodríguez:	Replying to "Alguno pudo resolver..."
+
+Eso mismo
+03:23:50	Yanina Rodríguez:	Replying to "Alguno pudo resolver..."
+
+<form action="alta_curso/" method="post"></form>
+        {% csrf_token %}
+        <p>Nombre:</p>
+        <input type="text" name="nombre" required>
+        <p>Camada</p>
+        <input type="number" name="camada" required>
+03:24:55	[Tutor] Miguel Rodenas:	Asistencia asignada a mi grupo de estudiantes 💪Los ausentes o no detectados por el sistema son: Brenda Diaz,Daniela Martínez,David Nimeth,Dayana Janet Arce Aguilar,Si están, escríbanme porfa, así lo actualizamos ☺️
+03:26:53	Gabriel Pintado:	Replying to "Alguno pudo resolver..."
+
+no me funciona el enviar, tampoco me sale error
+03:27:22	Yanina Rodríguez:	Replying to "Alguno pudo resolver..."
+
+Eso mismo me pasa ahora, ahí corregí, hago clic en enviar, pero no veo que se guarde en sql
+03:28:44	[Profesor] Maximiliano Torreblanca:	Replying to "Alguno pudo resolver..."
+
+@Yanina Rodríguez El código esta fuera de la etiqueta form
+03:35:37	Gonzalo Nuñez:	si todo ok
+03:36:27	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+@Gabriel Pintado cuando enviamos el form notas que se recargue la página o no funciona el botón?
+03:36:57	Gabriel Pintado:	Replying to "Alguno pudo resolver..."
+
+@[Tutor] Miguel Rodenas se recarga pero no se guarda nada
+03:38:15	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+Genial, por las dudas probemos ir de nuevo a la url donde tenemos el formulario y recarguemos con ctrl+shift+rIntentemos guardar algún dato de nuevo y después de enviarlo, si teníamos abierta la base de datos en vsc, intentemos cerrar esa pestañita y volver a abrirla
+03:39:44	Gabriel Pintado:	Replying to "Alguno pudo resolver..."
+
+@[Tutor] Miguel Rodenas sigue sin funcionar
+03:40:26	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+No te preocupes, cuando puedas déjame captura del código de nuevo, pero la parte del archivo completa (que se vea el nombre de los archivos)
+03:42:42	Ignacio Vazquez Turri:	todo ok
+03:42:56	Leandro Kühnel:	estamos
+03:42:58	Diego Tarrio:	porque no hace falta un constructor init?
+03:45:02	[Profesor] Maximiliano Torreblanca:	from AppCoder.forms import Curso_formulario
+03:48:18	Gabriel Pintado:	Replying to "Alguno pudo resolver..."
+
+ya lo arregle
+03:48:32	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+Genial!! qué nos faltaba?
+03:48:57	Gabriel Pintado:	Replying to "Alguno pudo resolver..."
+
+en el if para comparar el request.method con POST no puse method
+03:50:08	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+Claro! Nos había faltado un pedacito en el if para que se cumpliera, no lo había visto en las capturas 👏
+03:52:04	Yanina Rodríguez:	Replying to "Alguno pudo resolver..."
+
+A mi me sigue dando 404, creo que el error está en el path
+03:52:18	Yanina Rodríguez:	Replying to "Alguno pudo resolver..."
+
+“”The current path, AppCoder/alta_curso/alta_curso, didn’t match any of these.
+03:53:04	[Profesor] Maximiliano Torreblanca:	def curso_formulario(request):    if request.method == "POST":        mi_formulario = Curso_formulario( request.POST )        if mi_formulario.is_valid():            datos = mi_formulario.cleaned_data            curso = Curso( nombre=datos["nombre"] , camada=datos["camada"])            curso.save()            return render(request , "formulario.html")    return render(request , "formulario.html")
+03:53:40	Gustavo Andres Valle:	en curso puse numero y grabo igual
+03:53:49	Diego Tarrio:	Replying to "Alguno pudo resolver..."
+
+pusiste /alta_curso dos veces
+03:54:01	Gustavo Andres Valle:	claro
+03:54:10	Mariano Cuppari:	profe podria pasar el codigo de forms.py ?
+03:54:12	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+No te preocupes, el urls.py como lo tenemos?
+03:54:58	[Profesor] Maximiliano Torreblanca:	from django import formsclass Curso_formulario(forms.Form):    nombre = forms.CharField(max_length=30)    camada = forms.IntegerField()
+03:55:04	Mariano Cuppari:	gracias !
+03:55:23	Roberto Sebastián Triano:	a mi también me salta alta_curso dos veces como error
+03:55:38	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+Parece estar bien el código, probemos ir a alta_curso/ y recargar con ctrl+shift+r por las dudas nos esté mostrando el sin los cambios nuevos que habíamos hecho para corregir el form
+03:56:02	Roberto Sebastián Triano:	asi me sale
+03:56:13	Pablo Melano:	No se que paso aca jaja
+03:56:39	Dimas Reyes:	yo tengo otro problema, despues repaso las grabaciones
+03:57:40	Dimas Reyes:	si, eso lo hice, ahora reviso
+03:57:40	[Tutor] Miguel Rodenas:	Replying to "Alguno pudo resolver..."
+
+Intentemos sacarle la barrita final al alta_curso en el urls.pyque quede path("alta_curso", views.curso_formulario)
+03:57:41	Dimas Reyes:	gracias
+03:57:56	[Tutor] Miguel Rodenas:	Replying to "{6879C331-7BDB-4A42-AD2A-775DA00F9751}.png"
+
+Intentemos sacarle la barrita final al alta_curso en el urls.pyque quede path("alta_curso", views.curso_formulario)
+03:58:09	Andres Serra:	yo ya deje de intentar
+03:58:33	Diego Ebensperger Satt:	Reacted to "yo ya deje de intent..." with 🥲
+03:58:58	Roberto Sebastián Triano:	Replying to "{6879C331-7BDB-4A42-AD2A-775DA00F9751}.png"
+
+el error persiste, pero ahora con un solo alta_curso
+03:59:30	[Tutor] Miguel Rodenas:	Replying to "{6879C331-7BDB-4A42-AD2A-775DA00F9751}.png"
+
+Se genera al enviar el form? Por las dudas revisemos que en el action también esté sin barrita
+04:00:39	[Profesor] Maximiliano Torreblanca:	def buscar_curso(request):    return render(request, "buscar_curso.html")
+04:04:16	[Profesor] Maximiliano Torreblanca:	{% extends "padre.html" %}{% load static %}{% block contenido %}        <h2>Buscar Curso</h2>    <form action="buscar" method="GET">        <p>Nombre</p>        <input type="text" name="nombre" id="nombre">        <button>Buscar</button>    </form> {% endblock %}
+04:09:45	[Profesor] Maximiliano Torreblanca:	def buscar(request):    if request.GET["nombre"]:        nombre = request.GET["nombre"]        cursos = Curso.objects.filter(nombre__icontains= nombre)        return render( request , "resultado_busqueda.html" , {"cursos":cursos})    else:        return HttpResponse("Ingrese el nombre del curso")
+04:13:41	Valentin Zabala:	podes pasar el code del nuevo template resultado
+04:14:06	Juana Almiron:	Profe yo me tengo que ir perdón! Después vuelvo a ver la clase para la explicación de la preentrega
+04:14:24	[Profesor] Maximiliano Torreblanca:	{% extends "padre.html" %}{% load static %}{% block contenido %}        {% if cursos %}        <ul>        {% for curso in cursos %}            <li>Nombre: {{curso.nombre}}</li>            <li>Camada: {{curso.camada}}</li>        {% endfor %}        </ul>    {% else %}        <p>No se encontraron cursos con ese nombre</p>    {% endif %}{% endblock %}
+04:14:32	Joaquin Miranda:	creo que es el nombre del template profe
+04:14:34	Yanina Rodríguez:	Tenes mal el nombre del html
+04:14:36	Yanina Rodríguez:	Puede ser eso?
+04:18:55	Ignacio Vazquez Turri:	si perfecto
+04:19:00	Pablo Melano:	ok
+04:19:04	Ignacio Vazquez Turri:	sino de cero para estos días es muchisimo
+04:20:44	Giuliano Pisarra:	hay que pasar la preentrega
+04:20:44	Dimas Reyes:	este miercoles  hay clases?
+04:20:49	Carlos Martinis:	no me matès el miercoles
+04:20:53	Manuel Agustin Rodriguez:	No podemos estirar la entrega? jaja
+04:20:53	Otto Renzer:	va a llevar un ratito, un par de cafes, 99mil patadas al aire, 124 lloradas, 7 millones de consultas a chat gpt, jajjaa
+04:21:08	Cristian Caro Sierra:	Reacted to "va a llevar un ratit..." with 😂
+04:21:10	Nazareno Zuñiga:	podria pasar el código de urls profe?
+04:21:24	[Profesor] Maximiliano Torreblanca:	from django.urls import pathfrom . import viewsurlpatterns = [    path("", views.inicio , name="home"),    path("ver_cursos", views.ver_cursos , name="cursos"),    #path("alta_curso/<nombre>", views.alta_curso),    path("alumnos", views.alumnos , name="alumnos"),    path("alta_curso", views.curso_formulario),    path("buscar_curso", views.buscar_curso),    path("buscar", views.buscar)]
+04:21:24	Nazareno Zuñiga:	ah dale gracias profe
+04:21:32	Otto Renzer:	saludos
+04:21:34	Roberto Sebastián Triano:	gracias profe
+04:21:35	Otto Renzer:	a todos
+04:21:35	Yanina Rodríguez:	Buena semana
+04:21:38	Victorio Bussetti:	Chau chau!!! muchas gracias
+04:21:39	Diego Tarrio:	chau profe gracias
+04:21:40	Gustavo Andres Valle:	excelente
+04:21:41	Roberto Sebastián Triano:	buen finde largo
+04:21:41	[Tutor] Miguel Rodenas:	Nos vemos la próxima clase!
+04:21:41	Gustavo Andres Valle:	abrazo
+04:21:42	Gabriel Pintado:	buenas noches

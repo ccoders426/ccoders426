@@ -1,0 +1,61 @@
+{% extends 'padre.html' %}
+
+{% load static %}
+
+{% block title %} profesores {% endblock %}
+
+{% block contenido %}
+
+    <main>
+        <section>
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Profesores</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <section class="container">  
+            <a href="formulario_profesores" class="btn btn-primary">nuevo profesor</a>
+            <a href="buscar_profesor" class="btn btn-primary">buscar profesor</a>
+            <div><br><br></div> 
+            <div class="table-responsive py-2">                                    
+                <table class="table">
+                    <thead class="text-center">
+                        <tr>
+                            <th>id</th>
+                            <th>nombre</th>
+                            <th>apellido</th>
+                            <th>dni</th>
+                            <th>celular</th>
+                            <th>email</th>
+                            <th>curso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for n in profesores %}
+                        <tr>
+                            <th scope="row" class="text-center">{{n.id}}</th>
+                            <td>{{n.nombre}}</td>
+                            <td>{{n.apellido}}</td>
+                            <td class="text-end">{{n.dni}}</td>
+                            <td class="text-end">{{n.celular}}</td>
+                            <td>{{n.email}}</td>
+                            <td>{{n.curso}}</td>
+                            <div class="container">
+                                <td><a href="{% url 'edita_profesor' n.id %}" class="btn btn-info text-white">editar</a></td>
+                                <td><a href="{% url 'elimina_profesor' n.id %}" class="btn btn-secondary text-white btnEliminacion">eliminar</a></td>
+                            </div>                                                                    
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>  
+            </div>   
+        </section>           
+    </main>
+
+{% endblock %}

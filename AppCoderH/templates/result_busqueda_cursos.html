@@ -1,0 +1,55 @@
+{% extends 'padre.html' %}
+
+{% block title %} resultado busqueda {% endblock %}
+
+{% load static %}
+
+{% block contenido %}
+
+    <main>
+        <section>
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Cursos</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <section class="container">  
+            <a href="buscar_curso" class="btn btn-primary">volver</a>
+            <a href="ver_cursos" class="btn btn-primary">cursos</a>
+            <div><br><br></div> 
+            <div class="table-responsive py-2">                                    
+                <table class="table">
+                    <thead class="text-center">
+                        <tr>
+                            <th>nombre</th>
+                            <th>camada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if cursos %}                    
+                            {% for curso in cursos %}
+                            <tr>
+                                <th scope="row">{{curso.nombre}}</th>
+                                <td class="text-center">{{curso.camada}}</td>
+                                <div class="container">
+                                    <td><a href="{% url 'edita_curso' curso.id %}" class="btn btn-info text-white">editar</a></td>
+                                    <td><a href="{% url 'elimina_curso' curso.id %}" class="btn btn-secondary text-white">eliminar</a></td>
+                                </div>                                                                    
+                            </tr>
+                            {% endfor %}  
+                        {% else %}    
+                        <p>No se encontraron los cursos con ese nombre</p>                
+                        {% endif %}                      
+                    </tbody>
+                </table>  
+            </div>   
+        </section>           
+    </main>
+    
+{% endblock %}
