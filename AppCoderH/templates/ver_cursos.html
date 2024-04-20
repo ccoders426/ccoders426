@@ -27,7 +27,9 @@
                 <table class="table">
                     <thead class="text-center">
                         <tr>
+                            {% if request.user.is_authenticated %}
                             <th>id</th>
+                            {% endif %}
                             <th>nombre</th>
                             <th>camada</th>
                         </tr>
@@ -35,13 +37,17 @@
                     <tbody>
                         {% for n in cursos %}
                         <tr>
+                            {% if request.user.is_authenticated %}
                             <th scope="row" class="text-center">{{n.id}}</th>
+                            {% endif %}
                             <td>{{n.nombre}}</td>
                             <td class="text-center">{{n.camada}}</td>
+                            {% if request.user.is_authenticated %}
                             <div class="container">
                                 <td><a href="{% url 'edita_curso' n.id %}" class="btn btn-info text-white">editar</a></td>
                                 <td><a href="{% url 'elimina_curso' n.id %}" class="btn btn-secondary text-white">eliminar</a></td>
-                            </div>                                                                    
+                            </div>
+                            {% endif %}                                                                    
                         </tr>
                         {% endfor %}
                     </tbody>

@@ -29,8 +29,12 @@
                         <tr>
                             <th>nombre</th>
                             <th>apellido</th>
+                            {% if request.user.is_authenticated %}
                             <th>dni</th>
+                            {% endif %}
+                            {% if request.user.is_authenticated %}
                             <th>celular</th>
+                            {% endif %}
                             <th>email</th>
                             <th>curso</th>
                         </tr>
@@ -41,14 +45,20 @@
                             <tr>
                                 <th scope="row">{{profesor.nombre}}</th>
                                 <td>{{profesor.apellido}}</td>
+                                {% if request.user.is_authenticated %}
                                 <td>{{profesor.dni}}</td>
+                                {% endif %}
+                                {% if request.user.is_authenticated %}
                                 <td>{{profesor.celular}}</td>
+                                {% endif %}
                                 <td>{{profesor.email}}</td>
                                 <td>{{profesor.curso}}</td>
+                                {% if request.user.is_authenticated %}
                                 <div class="container">
                                     <td><a href="{% url 'edita_profesor' profesor.id %}" class="btn btn-info text-white">editar</a></td>
                                     <td><a href="{% url 'elimina_profesor' profesor.id %}" class="btn btn-secondary text-white">eliminar</a></td>
-                                </div>                                                                    
+                                </div>  
+                                {% endif %}                                                                  
                             </tr>
                             {% endfor %}  
                         {% else %}    

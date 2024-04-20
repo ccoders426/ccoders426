@@ -37,10 +37,12 @@
                             <tr>
                                 <th scope="row">{{curso.nombre}}</th>
                                 <td class="text-center">{{curso.camada}}</td>
+                                {% if request.user.is_authenticated %}
                                 <div class="container">
                                     <td><a href="{% url 'edita_curso' curso.id %}" class="btn btn-info text-white">editar</a></td>
                                     <td><a href="{% url 'elimina_curso' curso.id %}" class="btn btn-secondary text-white">eliminar</a></td>
-                                </div>                                                                    
+                                </div>
+                                {% endif %}                                                                    
                             </tr>
                             {% endfor %}  
                         {% else %}    

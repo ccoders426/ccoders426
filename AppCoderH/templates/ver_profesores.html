@@ -27,11 +27,17 @@
                 <table class="table">
                     <thead class="text-center">
                         <tr>
+                            {% if request.user.is_authenticated %}
                             <th>id</th>
+                            {% endif %}
                             <th>nombre</th>
                             <th>apellido</th>
+                            {% if request.user.is_authenticated %}
                             <th>dni</th>
+                            {% endif %}
+                            {% if request.user.is_authenticated %}
                             <th>celular</th>
+                            {% endif %}
                             <th>email</th>
                             <th>curso</th>
                         </tr>
@@ -39,17 +45,26 @@
                     <tbody>
                         {% for n in profesores %}
                         <tr>
+                            {% if request.user.is_authenticated %}
                             <th scope="row" class="text-center">{{n.id}}</th>
+                            {% endif %}
                             <td>{{n.nombre}}</td>
                             <td>{{n.apellido}}</td>
+                            {% if request.user.is_authenticated %}
                             <td class="text-end">{{n.dni}}</td>
+                            {% endif %}
+                            {% if request.user.is_authenticated %}
                             <td class="text-end">{{n.celular}}</td>
+                            {% endif %}
                             <td>{{n.email}}</td>
                             <td>{{n.curso}}</td>
+                            {% if request.user.is_authenticated %}
                             <div class="container">
                                 <td><a href="{% url 'edita_profesor' n.id %}" class="btn btn-info text-white">editar</a></td>
                                 <td><a href="{% url 'elimina_profesor' n.id %}" class="btn btn-secondary text-white btnEliminacion">eliminar</a></td>
-                            </div>                                                                    
+                            </div>
+                            {% endif %}
+
                         </tr>
                         {% endfor %}
                     </tbody>
