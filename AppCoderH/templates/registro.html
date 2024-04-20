@@ -1,0 +1,36 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+    <div class="container">
+      <br>
+      <h2>Nuevo usuario</h2>
+      <br>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button>Registrar</button>
+
+    </form>
+    </div>
+
+    <script>
+        // Using JavaScript to hide password requirements initially
+        const passwordRequirements = document.getElementById('password-requirements');
+        passwordRequirements.style.display = 'none';
+      
+        // Showing password requirements on hover
+        const passwordField = document.getElementById('password');
+        passwordField.addEventListener('mouseover', () => {
+          passwordRequirements.style.display = 'block';
+        });
+      
+        // Hiding password requirements on mouseout
+        passwordField.addEventListener('mouseout', () => {
+          passwordRequirements.style.display = 'none';
+        });
+      </script>
+
+{% endblock %}

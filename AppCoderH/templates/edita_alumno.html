@@ -27,7 +27,11 @@
                         <div class="container px-2 my-2">
                             <div class="card-body">
                                 <form action="{% url 'edita_alumno' alumno.id %}" method="POST">
-                                    {% csrf_token %}                                    
+                                    {% csrf_token %} 
+                                    
+                                    <p>avatar</p>                                    
+                                    {{mi_formulario_alumn.avatar}}
+                                    <div><br></div>                                    
                                     <p>nombre</p>                                    
                                     {{mi_formulario_alumn.nombre}}
                                     <div><br></div>

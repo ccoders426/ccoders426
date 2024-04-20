@@ -1,0 +1,27 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+    <h2>{{mensaje}}</h2>
+
+    <div class="container">
+        <div class=""row>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="{% static 'AppCoderH/assets/img_alumnos/david_castro.png'%}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{usuario}}</h5>
+                        <p class="card-text">Me gusta mucho el curso</p>
+                        <a class="btn btn-success" href="">Enviar mensaje</a>
+                        <a href="{% url 'EditarPerfil' %}" class="btn btn-warning">Editar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    
+    
+{% endblock %}

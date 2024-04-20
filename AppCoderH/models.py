@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 # Create your models here.
 
@@ -12,6 +14,7 @@ class Curso(models.Model):
 
 class Profesor(models.Model):
 
+    avatar = models.ImageField(upload_to='profesores', null=True, blank=True)
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
     dni = models.IntegerField()
@@ -24,6 +27,7 @@ class Profesor(models.Model):
      
 class Alumno(models.Model):
     
+    avatar = models.ImageField(upload_to='alumnos', null=True, blank=True)
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
     dni = models.IntegerField()
@@ -34,3 +38,11 @@ class Alumno(models.Model):
 
     def __str__(self):
         return f"nombre: {self.nombre} apellido: {self.apellido} dni: {self.dni} celular: {self.celular} email: {self.email} curso: {self.curso} camada: {self.camada}" 
+    
+class Avatar(models.Model):
+    #user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)    
+    imagen = models.ImageField(upload_to="avatares", null=True, blank=True)
+
+    def __str__(self):
+        return f"User: {self.user} Imagen: {self.imagen}" 

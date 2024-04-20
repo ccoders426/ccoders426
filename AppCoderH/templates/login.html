@@ -1,0 +1,28 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+    <div class="container">
+        <div class="loginContainer">
+            <div class="loginForm">
+                <br>
+                <h2>Ingrese sus datos</h2>
+                <br>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <br>
+                    <button>Enviar</button>                             
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+{% endblock %}

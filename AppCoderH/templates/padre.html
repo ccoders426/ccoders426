@@ -25,14 +25,32 @@
             <a class="navbar-brand" href="{% url 'home' %}"><span class="fw-bolder text-primary">coder4</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                <ul class="navbar-nav ml-auto ms-auto mb-2 mb-lg-0 small fw-bolder">
+
                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'cursos' %}">Cursos</a></li>
+                    {% if request.user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'cursos' %}">Cursos</a></li>                   
+                    {% endif %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'profesores' %}">Profesores</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'alumnos' %}">Alumnos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">sign in</a></li>
-                    <li class="nav-item"><a class="btn btn-secondary btn-sm" href="#!">sign up</a></li>
+
+                    {% if not user.is_authenticated %}
+                    
+                    <li class="nav-item mx-1"><a class="btn btn-outline-primary btn-sm" href="{% url 'Login' %}">sign in</a></li>
+                    <li class="nav-item mx-1"><a class="btn btn-secondary btn-sm" href="{% url 'Register' %}">sign up</a></li>
+                    {% endif %}
+
+                    {% if request.user.is_authenticated %}                    
+                    <li class="nav-item mx-1"><a class="nav-link" href="#!" style="color: #39b1e1">{{user.username}}</a></li>
+                    <img src="{{url}}" class="rounded-circle" width="25px" height="30px">
+                    <li class="nav-item mx-1">
+                        <form method="post" action="{% url 'Logout' %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm">LogOut</button>
+                        </form>
+                    </li>
+                    {% endif %}
+                    
                 </ul>
             </div>
         </div>
@@ -86,7 +104,7 @@
     <!-- Alerts JS-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="{% static 'AppCoderH/js/eliminarObjetos.js' %}"></script>
+    <!--<script src="{% static 'AppCoderH/js/eliminarObjetos.js' %}"></script>-->
 
     {% if messages %}
         {% for m in messages %}
