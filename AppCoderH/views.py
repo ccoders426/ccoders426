@@ -219,7 +219,6 @@ def edita_profesor(request, id):
         mi_formulario_profe = Profesor_formulario(request.POST)
         if mi_formulario_profe.is_valid():
             datos = mi_formulario_profe.cleaned_data
-            profesor.avatar = datos["avatar"]
             profesor.nombre = datos["nombre"]
             profesor.apellido = datos["apellido"]
             profesor.dni = datos["dni"]
@@ -297,7 +296,6 @@ def edita_alumno(request, id):
         mi_formulario_alumn = Alumno_formulario(request.POST)
         if mi_formulario_alumn.is_valid():
             datos = mi_formulario_alumn.cleaned_data
-            alumno.avatar = datos["avatar"]
             alumno.nombre = datos["nombre"]
             alumno.apellido = datos["apellido"]
             alumno.dni = datos["dni"]
