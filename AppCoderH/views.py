@@ -105,7 +105,7 @@ def formulario_cursos(request):
             datos = mi_formulario_cur.cleaned_data
             curso = Curso(nombre=datos["nombre"], camada=datos["camada"])
             curso.save()
-            return render(request, "formulario_cursos.html", {"url":avatares[0].imagen.url if avatares.exists () else None} )
+            return render(request, "formulario_cursos.html", {"url":avatares[0].imagen.url if avatares.exists () else None})
         
     return render(request, "formulario_cursos.html", {"url":avatares[0].imagen.url if avatares.exists () else None})
 
@@ -184,7 +184,7 @@ def formulario_profesores(request):
             profesor.save()
             return render(request, "formulario_profesores.html", {"url":avatares[0].imagen.url if avatares.exists () else None})
         
-    return render(request, "formulario_profesores.html", {"profesores":profesor, "url":avatares[0].imagen.url if avatares.exists () else None})
+    return render(request, "formulario_profesores.html", {"url":avatares[0].imagen.url if avatares.exists () else None})
 
 def buscar_profesor(request):
     avatares = Avatar.objects.filter(user=request.user.id)
@@ -258,9 +258,9 @@ def formulario_alumnos(request):
             datos = mi_formulario_alumn.cleaned_data
             alumno = Alumno(nombre=datos["nombre"], apellido=datos["apellido"], dni=datos["dni"], celular=datos["celular"], email=datos["email"], curso=datos["curso"], camada=datos["camada"])
             alumno.save()
-            return render(request, "formulario_alumnos.html", {"alumnos": alumno, "url":avatares[0].imagen.url if avatares.exists () else None})
+            return render(request, "formulario_alumnos.html", {"url":avatares[0].imagen.url if avatares.exists () else None})
         
-    return render(request, "ver_alumnos.html", {"url":avatares[0].imagen.url if avatares.exists () else None})
+    return render(request, "formulario_alumnos.html", {"url":avatares[0].imagen.url if avatares.exists () else None})
 
 @login_required
 def buscar_alumno(request):

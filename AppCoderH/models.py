@@ -14,7 +14,6 @@ class Curso(models.Model):
 
 class Profesor(models.Model):
 
-    avatar = models.ImageField(upload_to='profesores', null=True, blank=True)
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
     dni = models.IntegerField()
@@ -27,7 +26,6 @@ class Profesor(models.Model):
      
 class Alumno(models.Model):
     
-    avatar = models.ImageField(upload_to='alumnos', null=True, blank=True)
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
     dni = models.IntegerField()

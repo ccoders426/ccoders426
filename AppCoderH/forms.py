@@ -9,7 +9,6 @@ class Curso_formulario(forms.Form):
 
 class Profesor_formulario(forms.Form):
 
-    avatar = forms.ImageField()
     nombre = forms.CharField(max_length=40)
     apellido = forms.CharField(max_length=40)
     dni = forms.IntegerField()
@@ -19,7 +18,7 @@ class Profesor_formulario(forms.Form):
 
 
 class Alumno_formulario(forms.Form):
-    avatar = forms.ImageField()
+    
     nombre = forms.CharField(max_length=40)
     apellido = forms.CharField(max_length=40)
     dni = forms.IntegerField()
